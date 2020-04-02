@@ -10,6 +10,6 @@ module.exports = function () {
         
     }
     return {
-        userGet: userGet
+        userGet
     }
 };
