@@ -21,14 +21,14 @@ function AuthController() {
   function isAuthorizedAsync(neededRole, cb) {
     setTimeout(() => {
       cb(roles.indexOf(neededRole) >= 0);
-    }, 400);
+    }, 100);
   }
 
   function isAuthorizedPromise(neededRole) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(roles.indexOf(neededRole) >= 0);
-      }, 500);
+      }, 150);
     }); 
   }
 
