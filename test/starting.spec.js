@@ -12,7 +12,7 @@ describe('Basic mocha test', () => {
     };
     
     obj.should.have.property('name').equal('Harry');
-    obj.should.deep.equal(obj2)
+    obj.should.deep.equal(obj2);
   })
 
   it('should allow testing nulls', () => {
